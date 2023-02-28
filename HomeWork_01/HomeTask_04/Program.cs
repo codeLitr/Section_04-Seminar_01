@@ -16,7 +16,8 @@ int Prompt(string message)
 }
 int value = Prompt("Введите число > ");
 
+Console.Write($"{value} -> ");
 for (int index = 2; index <= value; index+=2)
     {
-        Console.Write($" {index},");
+        Console.Write($"{index},");
     }
