@@ -16,16 +16,7 @@ int Prompt(string message)
 }
 int value = Prompt("Введите число > ");
 
-for (int index = 1; index <= value; index++)
-    if (index % 2 == 0)
+for (int index = 2; index <= value; index+=2)
     {
-        Console.WriteLine($" {index},");
+        Console.Write($" {index},");
     }
-
-    /*
-    Предложение преподавателя:
-    for (int index = 2; index <= value; index+=2)
-    {
-        Console.WriteLine($" {index},");
-    }
-    */
